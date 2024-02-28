@@ -2,9 +2,9 @@
 let words = ["яблоко", "банан", "апельсин", "манго", "киви"];
 
 let orange = (words) => {
-  if (words.indexOf("апельсин")) {
+  if (words.indexOf("апельсин") != -1) {
    return console.log("Ура! нашел")
-  }else{
+  }else if (words.indexOf("апельсин") === -1){
     return console.log("Придется поискать в другом магазине…")
   }
 }
